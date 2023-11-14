@@ -142,6 +142,7 @@ jdbc_df = spark.read \
 ```
 
 > [!IMPORTANT]
+> - ADAL is deprecated since 2023 per this reference https://learn.microsoft.com/en-us/entra/identity-platform/msal-migration 
 > - A required dependency must be installed in order to authenticate using Active Directory. 
 > - The format of `user` when using ActiveDirectoryPassword should be the UPN format, for example `username@domainname.com`. 
 >   - For **Scala**, the `com.microsoft.aad.adal4j` artifact will need to be installed.
